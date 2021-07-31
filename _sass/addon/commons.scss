@@ -1267,7 +1267,7 @@ $sidebar-display: "sidebar-display";
 @media all and (min-width: 850px) {
   /* Solved jumping scrollbar */
   html {
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   #main-wrapper {

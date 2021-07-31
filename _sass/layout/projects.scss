@@ -1,0 +1,102 @@
+@function css-function( $function, $values... ) {
+	@return 
+		$function
+		+ unquote( '(' )
+		+ $values
+		+ unquote( ')' )
+	;
+}
+
+
+@function css-max( $values... ) {
+	@return css-function( max, $values );
+}
+
+body{ 
+    overflow: hidden;
+    margin: 0;
+}
+
+#main{ 
+    background-color: #252525;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 20px;
+}
+
+.project-container{ 
+    width:100vw;
+}
+
+.heading h1{ 
+    margin: auto;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ffffff;
+    width: 300px;
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+.project-posts{
+    display: flex; 
+    min-width: 1400px;
+    padding: 20px;
+    width: 80%;
+    background-color: #202020;
+    border-radius: 25px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.6);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.inner-project{ 
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    min-width: 600px;
+}
+
+
+
+div#boids{ 
+    margin: 70px 0px 0px 10px;
+    max-width: 700px;
+    max-height: 400px;
+}
+
+#lorenz{ 
+    margin: 70px 0px 0px 10px;
+    height: 500px;
+    max-width: 700px;
+}
+
+.right-project{ 
+    margin-left: 20px;
+}
+
+.project-posts h1{ 
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+    background-color: #515151;
+    border-radius: 10px;
+}
+
+.project-posts p{ 
+    color: #ffffff;
+}
+
+.project-posts iframe{ 
+    display: block;
+    margin: auto;
+}
+
+.source-link{ 
+    margin-bottom: 25px;
+}

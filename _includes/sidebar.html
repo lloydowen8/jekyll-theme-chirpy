@@ -31,7 +31,7 @@
   <ul class="w-100">
     <!-- home -->
     <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
-      <a href="{{ '/' | relative_url }}" class="nav-link">
+      <a href="{{ '/blog' | relative_url }}" class="nav-link">
         <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
         <span>{{ "HOME" }}</span>
       </a>
@@ -39,7 +39,7 @@
     <!-- the real tabs -->
     {% for tab in site.tabs %}
     <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
-      <a href="{{ tab.url | relative_url }}" class="nav-link">
+      <a href="{{ tab._url | relative_url }}" class="nav-link">
         <i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i>
         <span>{{ tab.title | upcase }}</span>
       </a>
@@ -76,7 +76,7 @@
 
     {% endfor %}
 
-    {% unless site.theme_mode %}
+    <!-- {% unless site.theme_mode %}
       {% if site.data.contact.size > 0 %}
         <span class="icon-border order-2"></span>
       {% endif %}
@@ -84,7 +84,7 @@
       <span id="mode-toggle-wrapper" class="order-1">
         {% include mode-toggle.html %}
       </span>
-    {% endunless %}
+    {% endunless %} -->
 
   </div> <!-- .sidebar-bottom -->
 

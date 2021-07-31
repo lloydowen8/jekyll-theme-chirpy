@@ -1,0 +1,155 @@
+.current {
+    color: green;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row { 
+  position:relative
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  //float: left;
+  margin-top: 20px;
+  height: 100%;
+}
+
+.left, .right {
+  width: 2.5%;
+  min-width: 40px;
+  position: absolute;
+}
+
+.left { 
+  float: left;
+}
+
+.right { 
+  float: right;
+}
+
+.middle {
+  float: left;
+  min-height: 95vh; 
+  max-height: 95vh;
+  width: 95%;
+  min-width: 900px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.blog-link { 
+  margin: 0 auto;
+  text-align: center;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+
+}
+
+.blog-link a{ 
+  text-decoration: none;
+}
+
+#blogLink { 
+  font-weight: 1000;
+  font-size: 1.9em;
+  margin-block-start: 0.35em;
+}
+
+.project-link { 
+  margin: 0 auto;
+  right: 0;
+  text-align: center;
+  writing-mode: vertical-lr;
+}
+
+.bloglink-container { 
+    display: inline-block;
+    background-color: #E3E3E3;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+#boidCanvas { 
+  background-color: #888888c7; 
+  width:100%; 
+  height:100%;
+}
+
+.projectlink-container { 
+  display: inline-block;
+  padding-bottom: 120px;
+  padding-top: 120px;
+  background-color: #252525;
+}
+
+#projectsLink{ 
+  color:#FFFFFF;
+  font-weight: 1000;
+  font-size: 1.9em;
+  margin-block-start: 0.35em;
+}
+
+.landingInfo{ 
+  position: absolute;
+  align-items: center;
+  width:95%;
+  height: 100%;
+}
+#Name { 
+  display: inline-block;
+  vertical-align: top;
+}
+
+#Name b h1{ 
+  font-size: 5em;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+
+#Name b p{ 
+  color: #000000;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+#ProfilePic{ 
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+#ProfilePic img{ 
+  width: calc(65vh/1.113); 
+  height: 65vh;
+}
+
+#socials { 
+  margin-top: 30px;
+  margin-left: calc(65vh/1.3/2 - 105px);
+
+}
+
+
+#socials img{ 
+  width: 36px;
+  height: 36px;
+  margin-left: 40px;
+}
+
+#canvasParent canvas { 
+  background-color: #888888c7; 
+  width:100%; 
+  height:100%;
+}

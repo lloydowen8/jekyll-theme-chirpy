@@ -1,0 +1,71 @@
+<div class="project-container">
+    <div class = "heading">
+        <h1>Projects</h1>
+    </div>
+    {% for project in site.projects %}
+        {% assign value = project.order | modulo:2 %}
+        <div class="project-posts">
+            {% if value == 0 %}
+                <div id ="{{ project._id }}" class="inner-project">
+                    {% if project._id == null %}
+                    <iframe width="420" height="345" src="{{ project.vid-link }}">
+                    </iframe>
+                {% endif %}
+                </div>
+                <div class="inner-project right-project">
+                    <h1>{{ project.title | upcase }}</h1>
+                    <p>{{ project.content}}</p>
+                    {% if project.blog-link %}
+                        <h3>Blog Link: <a href="{{ project.blog-link }}">{{ project.blog-name }}</a></h3>
+                    {% else %}
+                        <br/>
+                        <br/>
+                    {% endif %}
+                    {% if project.source-code %}
+                        <h3 class="source-link"><a href="{{ project.source-code }}">Source Code</a></h3>
+                    {% else %}
+                        <br/>
+                        <br/>
+                    {% endif %}
+                    {% if project._id != null %}
+                        {% if project.vid-link != null %}
+                            <iframe width="420" height="345" src="{{ project.vid-link }}">
+                            </iframe>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% else %}
+                <div class="inner-project">
+                    <h1>{{ project.title | upcase }}</h1>
+                    <p>{{ project.content}}</p>
+                    {% if project.blog-link %}
+                        <h3>Blog Link: <a href="{{ project.blog-link }}">{{ project.blog-name }}</a></h3>
+                    {% else %}
+                        <br/>
+                        <br/>
+                    {% endif %}
+                    {% if project.source-code %}
+                        <h3 class="source-link"><a href="{{ project.source-code }}">Source Code</a></h3>
+                    {% else %}
+                        <br/>
+                        <br/>
+                    {% endif %}
+                    {% if project._id != null %}
+                        {% if project.vid-link != null %}
+                            <iframe width="420" height="345" src="{{ project.vid-link }}">
+                            </iframe>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                <div id ="{{ project._id }}" class="inner-project" >
+                    {% if project._id == null %}
+                        {% if project.vid-link != null %}
+                            <iframe width="420" height="345" src="{{ project.vid-link }}">
+                            </iframe>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
