@@ -3,7 +3,7 @@ _id: lorenz
 title: Chaos Attractor
 vid-link: https://youtube.com/embed/TB8PrRNOKAM
 blog-name: Visualising Chaos
-blog-link: /blog
+blog-link: /landing
 source-code: https://github.com/lloydowen8/AttractorVisuialisation
 order: 1
 ---

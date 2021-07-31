@@ -7,7 +7,7 @@ order: 5
 
 ## The Important stuff
 
-My CV can be downloaded using this [link](../assets/CV). 
+My CV can be downloaded using this [link](../assets/CV.pdf). 
 
 I am currently studying Computer Science (BSc) at the University of Glasgow. My current interests are in low level programming and visualisations. However, CS is a vast field and I am always looking to find new interests. 
 
@@ -41,7 +41,7 @@ The majority of my projects have been personal projects that have centered aroun
 
    Held the roles of Scrum Master and acting Product Owner from the majority of the project, leading Scrum meeting and handling all comunication with the customer. 
 
-More about my personal projects can be found [here](../projects), on the projects page.
+More about my personal projects can be found [here](../projects.html), on the projects page.
 </div>
 
 ## Societies
